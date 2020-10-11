@@ -57,14 +57,19 @@
         border-radius: 3px;
         border: solid 2px transparent;
         overflow: hidden;
+        height: 400px;
     }
 
     .Note-darkmode{
         background-color: #232531;
         border-radius: 3px;
         border: solid 2px transparent;
-        
+        height: 400px;
         overflow: hidden;
+    }
+
+    .Note-container{
+        height: 100%;
     }
 
 
