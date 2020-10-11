@@ -61,6 +61,15 @@ app.post('/update', (req, res) =>{
     res.json({ message: 'success' });
 });
 
+app.post('/darkmode', (req, res) =>{
+    const darkmode = req.body.darkmode;
+
+    settings.darkmode = darkmode;
+    save();
+        
+    res.json({ message: 'success' });
+});
+
 
 app.listen('3001', () =>{
     console.log('Servidor iniciado...');
