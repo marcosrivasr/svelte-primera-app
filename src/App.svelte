@@ -9,6 +9,7 @@
 
 	let notes = [];
 	let copyNotes = [];
+	$:count = notes.length;
 
 	onMount(async () => {
 		//const response = await fetch('/api/api.json');
@@ -151,6 +152,7 @@
 
 <main class={$darkmode? 'darkmode' : ''}>
 	<Header on:input={handleQuery}/>
+	<div class="count-notes">{count} notas</div>
 	<Dashboard 
 		bind:notes={copyNotes} 
 		on:click={handleNew} 
@@ -174,6 +176,11 @@
 	:global(main.darkmode, main.darkmode textarea, main.darkmode input){
 		background-color: black;
 		color: white;
+	}
+
+	.count-notes{
+		padding: 20px 20px 0 20px;
+		text-align: right;
 	}
 
 </style>
