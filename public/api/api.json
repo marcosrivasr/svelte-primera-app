@@ -1,0 +1,26 @@
+{
+    "notes":[
+        {
+            "id": 0,
+            "title": "🛍 Lista de compras",
+            "color": "#FFC2C2",
+            "text": "Holis"
+        },
+        {
+            "id": 1,
+            "title": "prueba",
+            "color": "#FFEAC2",
+            "text": "Holis"
+        },
+        {
+            "id": 2,
+            "title": "minuta",
+            "color": "#DDFFC2",
+            "text": "Holis"
+        }
+    ],
+    "settings":{
+        "darkmode": false,
+        "view": "list"
+    }
+}
