@@ -4,6 +4,20 @@
 
 	function changeTheme() {
         darkmode.update(x => !$darkmode);
+
+        fetch("http://localhost:3001/darkmode", { 
+			// Adding method type 
+			method: "POST", 
+				
+			// Adding body or contents to send 
+			body: JSON.stringify({darkmode: $darkmode}), 
+				
+			// Adding headers to the request 
+			headers: { 
+				"Content-type": "application/json; charset=UTF-8"
+			} 
+		}).then(response => response.json())
+		.then(res => console.log(res));
 	}
 </script>
 
