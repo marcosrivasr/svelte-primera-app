@@ -106,6 +106,8 @@
         width: 100%;
         border: 0;
         outline: none;
+        resize: none;
+        height: 250px;
     }
 
     .title input{
@@ -114,6 +116,7 @@
         padding: 10px 0;
         outline: none;
         border: none;
+        width: 100%;
     }
 
     button{

@@ -16,7 +16,7 @@ button{
     background-color: transparent;
     font-weight: bold;
     width: 100%;
-    height: 100%;
+    height: 400px;
 }
 
 button:hover{
